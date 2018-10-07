@@ -13,6 +13,7 @@
 		03B035DA216A6F82007FBD05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03B035D9216A6F82007FBD05 /* Assets.xcassets */; };
 		03B035DD216A6F82007FBD05 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03B035DB216A6F82007FBD05 /* LaunchScreen.storyboard */; };
 		03B035E8216A6F82007FBD05 /* NSCoderEncoderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B035E7216A6F82007FBD05 /* NSCoderEncoderTests.swift */; };
+		03B035F4216A705E007FBD05 /* NSCoderEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B035F3216A705E007FBD05 /* NSCoderEncoder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		03B035E3216A6F82007FBD05 /* NSCoderEncoderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NSCoderEncoderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		03B035E7216A6F82007FBD05 /* NSCoderEncoderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSCoderEncoderTests.swift; sourceTree = "<group>"; };
 		03B035E9216A6F82007FBD05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03B035F3216A705E007FBD05 /* NSCoderEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSCoderEncoder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 			children = (
 				03B035D2216A6F80007FBD05 /* AppDelegate.swift */,
 				03B035D4216A6F80007FBD05 /* ViewController.swift */,
+				03B035F2216A7039007FBD05 /* Encoder */,
 				03B035D6216A6F80007FBD05 /* Main.storyboard */,
 				03B035D9216A6F82007FBD05 /* Assets.xcassets */,
 				03B035DB216A6F82007FBD05 /* LaunchScreen.storyboard */,
@@ -94,6 +97,14 @@
 				03B035E9216A6F82007FBD05 /* Info.plist */,
 			);
 			path = NSCoderEncoderTests;
+			sourceTree = "<group>";
+		};
+		03B035F2216A7039007FBD05 /* Encoder */ = {
+			isa = PBXGroup;
+			children = (
+				03B035F3216A705E007FBD05 /* NSCoderEncoder.swift */,
+			);
+			path = Encoder;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,6 +207,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03B035F4216A705E007FBD05 /* NSCoderEncoder.swift in Sources */,
 				03B035D5216A6F80007FBD05 /* ViewController.swift in Sources */,
 				03B035D3216A6F80007FBD05 /* AppDelegate.swift in Sources */,
 			);

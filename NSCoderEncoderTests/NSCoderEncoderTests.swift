@@ -8,7 +8,33 @@
 import XCTest
 @testable import NSCoderEncoder
 
+
 class NSCoderEncoderTests: XCTestCase {
+
+    struct TestStruct: Codable, Equatable {
+        let id: Int
+        let name: String
+        let components: [String]
+    }
+
+    class TestSuperClass: Codable, Equatable {
+        let id: Int
+        let testStruct: TestStruct
+
+        init(id: Int, testStruct: TestStruct) {
+            self.id = id
+            self.testStruct = testStruct
+        }
+    }
+
+    class TestClass: TestSuperClass {
+        let pairs: [String: String]
+
+        init(id: Int, testStruct: TestStruct, pairs: [String: String]) {
+            self.pairs = pairs
+            super.init(id: id, testStruct: testStruct)
+        }
+    }
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -18,16 +44,10 @@ class NSCoderEncoderTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() {
+    func testJSONDecoderCanDecodeDataEncodedByNSCoderEncoder() {
+        let encoder = NSCoderEncoder.NSCoderEncoder()
+        let data =
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
-
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
-
 }
