@@ -14,6 +14,11 @@
 		03B035DD216A6F82007FBD05 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03B035DB216A6F82007FBD05 /* LaunchScreen.storyboard */; };
 		03B035E8216A6F82007FBD05 /* NSCoderEncoderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B035E7216A6F82007FBD05 /* NSCoderEncoderTests.swift */; };
 		03B035F4216A705E007FBD05 /* NSCoderEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B035F3216A705E007FBD05 /* NSCoderEncoder.swift */; };
+		03D5C356216AD3C4007888AE /* NSCoderSingleValueEncodingContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D5C355216AD3C4007888AE /* NSCoderSingleValueEncodingContainer.swift */; };
+		03D5C358216AD4ED007888AE /* String+Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D5C357216AD4ED007888AE /* String+Error.swift */; };
+		03D5C35A216AE696007888AE /* NSCoderCodingKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D5C359216AE696007888AE /* NSCoderCodingKey.swift */; };
+		03D5C35C216AEF64007888AE /* NSCoderKeyedEncodingContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D5C35B216AEF64007888AE /* NSCoderKeyedEncodingContainer.swift */; };
+		03D5C35E216AFAFE007888AE /* NSCoderUnkeyedEncodingContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D5C35D216AFAFE007888AE /* NSCoderUnkeyedEncodingContainer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +43,11 @@
 		03B035E7216A6F82007FBD05 /* NSCoderEncoderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSCoderEncoderTests.swift; sourceTree = "<group>"; };
 		03B035E9216A6F82007FBD05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		03B035F3216A705E007FBD05 /* NSCoderEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSCoderEncoder.swift; sourceTree = "<group>"; };
+		03D5C355216AD3C4007888AE /* NSCoderSingleValueEncodingContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSCoderSingleValueEncodingContainer.swift; sourceTree = "<group>"; };
+		03D5C357216AD4ED007888AE /* String+Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Error.swift"; sourceTree = "<group>"; };
+		03D5C359216AE696007888AE /* NSCoderCodingKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSCoderCodingKey.swift; sourceTree = "<group>"; };
+		03D5C35B216AEF64007888AE /* NSCoderKeyedEncodingContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSCoderKeyedEncodingContainer.swift; sourceTree = "<group>"; };
+		03D5C35D216AFAFE007888AE /* NSCoderUnkeyedEncodingContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSCoderUnkeyedEncodingContainer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +113,11 @@
 			isa = PBXGroup;
 			children = (
 				03B035F3216A705E007FBD05 /* NSCoderEncoder.swift */,
+				03D5C35B216AEF64007888AE /* NSCoderKeyedEncodingContainer.swift */,
+				03D5C35D216AFAFE007888AE /* NSCoderUnkeyedEncodingContainer.swift */,
+				03D5C355216AD3C4007888AE /* NSCoderSingleValueEncodingContainer.swift */,
+				03D5C359216AE696007888AE /* NSCoderCodingKey.swift */,
+				03D5C357216AD4ED007888AE /* String+Error.swift */,
 			);
 			path = Encoder;
 			sourceTree = "<group>";
@@ -209,7 +224,12 @@
 			files = (
 				03B035F4216A705E007FBD05 /* NSCoderEncoder.swift in Sources */,
 				03B035D5216A6F80007FBD05 /* ViewController.swift in Sources */,
+				03D5C35C216AEF64007888AE /* NSCoderKeyedEncodingContainer.swift in Sources */,
+				03D5C358216AD4ED007888AE /* String+Error.swift in Sources */,
 				03B035D3216A6F80007FBD05 /* AppDelegate.swift in Sources */,
+				03D5C35E216AFAFE007888AE /* NSCoderUnkeyedEncodingContainer.swift in Sources */,
+				03D5C35A216AE696007888AE /* NSCoderCodingKey.swift in Sources */,
+				03D5C356216AD3C4007888AE /* NSCoderSingleValueEncodingContainer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
